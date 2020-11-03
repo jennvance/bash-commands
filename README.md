@@ -2,15 +2,19 @@
 
 Bash is a text-based interface that developers use to interact with an operating system. It is the default shell in Linux. Like all shells, bash acts as an interpreter whereby a user can implement commands to perform a wide variety of tasks. These tasks include managing data streams, manipulating files and directories, interacting with text files, and managing network services. A user can combine multiple bash commands in one script to perform complex operations.
 
-Before you can use bash you must know which commands are available to you and what their functions are. You can view available commands by typing ls /bin into the shell. The following are a list of common bash commands you may find useful.
+Before you can use bash you must know which commands are available to you and what their functions are. You can view available commands by typing 
+```
+ls /bin 
+```
+into the shell. The following are a list of common bash commands you may find useful.
 
-### Commands for Navigating a Directory
+## Commands for Navigating a Directory
 
-#### pwd
+### pwd
 
 Identifies the current directory.
 
-#### cd
+### cd
 
 Change directory. 
 
@@ -34,13 +38,13 @@ Use slashes to move back multiple levels of directory.
 cd ../../..
 ```
 
-#### ~
+### ~
 
 Represents the home directory of the current user.
 
 For the root user, this will be /root.
 
-#### ls
+### ls
 
 List files in current directory. You can use switches to be more specific.
 ```
