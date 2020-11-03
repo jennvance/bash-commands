@@ -4,12 +4,14 @@ Bash is a text-based interface that developers use to interact with an operating
 
 Before you can use bash you must know which commands are available to you and what their functions are. You can view available commands by typing ls /bin into the shell. The following are a list of common bash commands you may find useful.
 
-###Commands for Navigating a Directory
+### Commands for Navigating a Directory
 
-####pwd
+#### pwd
+
 Identifies the current directory.
 
-####cd
+#### cd
+
 Change directory. 
 
 Used by itself, it takes you to the home directory.
@@ -32,12 +34,14 @@ Use slashes to move back multiple levels of directory.
 cd ../../..
 ```
 
-####~
+#### ~
+
 Represents the home directory of the current user.
 
 For the root user, this will be /root.
 
-####ls
+#### ls
+
 List files in current directory. You can use switches to be more specific.
 ```
 ls -a
