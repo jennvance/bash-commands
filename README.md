@@ -96,11 +96,6 @@ Copy one file to another. Overwrites the receiving file.
 cp file1 file2
 ```
 
-You can copy multiple files into a single file:
-```
-cp file1 file2 ... dirname
-```
-
 ### mv
 Renames a file. Everything else about the file remains the same.
 ```
@@ -113,7 +108,7 @@ Link. Creating a linked file allows users to refer to the same file using a diff
 ln filename newname
 ```
 
-###find
+### find
 Search directories and subdirectories for a desired file.
 ```
 find /path searchterm actiontoperform
@@ -128,6 +123,33 @@ For this example, we'll create an alias for the ```ls``` command so that it retu
 ```
 alias ls='ls -a'
 ```
+
+## Manipulating Text Streams
+
+A text stream is the movement of data. For example, the command ```cat filename``` streams the data from ```filename``` to the terminal.
+
+### cat
+Read a file.
+```
+cat filename
+```
+You can concatenate two files into a single output.
+```
+cat file1 file2
+```
+
+### more
+A utility also known as a "pager" that lets you scroll through the text of a file from start to finish.
+```
+more /var/log/messages
+```
+
+### less
+A utility known as a "pager" that lets you scroll through the text of a file using the arrow keys.
+```
+less /var/log/messages
+```
+
 
 
 
