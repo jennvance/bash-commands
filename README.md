@@ -165,7 +165,7 @@ Reads the last 10 lines of a file. Useful for reading new or recent entries.
 tail filename
 ```
 
-You can add an ```-n_xy_``` switch to specify number of lines to read.
+You can add an ``` -n*xy* ``` switch to specify number of lines to read.
 ```
 tail -n 25 filename
 ```
