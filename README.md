@@ -119,14 +119,6 @@ find /path searchterm actiontoperform
 
 Find is a complex and useful command that can take a wide variety of arguments not covered here.
 
-### alias
-Rename or simplify name of another command.
-
-For this example, we'll create an alias for the ```ls``` command so that it returns hidden files without having to use the ```-a``` switch.
-```
-alias ls='ls -a'
-```
-
 ## Manipulating Text Streams
 
 A text stream is the movement of data. For example, the command ```cat filename``` streams the data from ```filename``` to the terminal.
@@ -188,4 +180,13 @@ Display the differences between two files.
 diff file1 file2
 ```
 
+## Creating Aliases
+
+### alias
+Rename or simplify name of another command.
+
+For this example, we'll create an alias for the ```ls``` command so that it returns hidden files without having to use the ```-a``` switch.
+```
+alias ls='ls -a'
+```
 
