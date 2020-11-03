@@ -4,11 +4,14 @@ Bash is a text-based interface that developers use to interact with an operating
 
 Before you can use bash you must know which commands are available to you and what their functions are. You can view available commands by typing ```ls /bin ``` into the shell. The following are some common bash commands you may find useful.
 
-## Navigating a Directory
+## Navigating Directories
 
 ### pwd
 
 Identifies the current directory.
+```
+pwd
+```
 
 ### cd
 
@@ -38,7 +41,7 @@ cd ../../..
 
 Represents the home directory of the current user.
 
-For the root user, this will be /root.
+For the root user, this will be ```/root```.
 
 ### ls
 
@@ -74,7 +77,7 @@ rmdir
 ```
 
 ### rm
-Remove. Use for files and non-empty directories. Use great caution when using this command. The files you remove will not be recoverable. Take care to avoid typos.
+Remove. Use for files and non-empty directories. Use caution when using this command. The files you remove will not be recoverable. Take care to avoid typos.
 ```
 rm filename
 ```
@@ -150,6 +153,39 @@ A utility known as a "pager" that lets you scroll through the text of a file usi
 less /var/log/messages
 ```
 
+### head
+Reads the first 10 lines of a file
+```
+head filename
+```
 
+### tail
+Reads the last 10 lines of a file. Useful for reading new or recent entries.
+```
+tail filename
+```
+
+You can add an ```-n*xy*``` switch to specify number of lines to read.
+```
+tail -n 25 filename
+```
+
+### sort
+Sorts by alphabetical order (by line) as default. Can specify arguments.
+```
+sort filename
+```
+
+### grep
+Uses a search term to look through a file. Returns the entire line that contains the search term. You can use regular expressions as arguments.
+```
+grep "search term" /filepath/filename
+```
+
+### diff
+Display the differences between two files.
+```
+diff file1 file2
+```
 
 
